@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>test</h1>
+    <button id="btn">click</button>
+
+    <script type="module">
+      const btn = document.querySelector('#btn')
+      btn.addEventListener('click', () => {
+        socket.emit('putChat', {
+          content: 'test content',
+          user_name: 'zs',
+          room_id: 2,
+          room: '房间名一',
+          type: 0 // 0: 文字消息;1:文件消息
+        })
+      })
+      import { io } from 'https://cdn.socket.io/4.7.5/socket.io.esm.min.js'
+
+      const socket = io('http://localhost:3001')
+
+      socket.on('connect', () => {
+        // 加入房间
+        socket.emit('room', { room: '房间名一', room_id: 2, user_name: '张三' })
+        // 接收管理员信息
+        socket.on('info', (text) => {
+          console.log(`管理员通知:${text}`)
+        })
+        // 接收历史消息
+        socket.on('history', (history) => {
+          console.log('历史消息', history)
+        })
+        // 接收成员新发消息
+        socket.on('msg', ({ content, user_name }) => {
+          console.log('new chat', content, user_name)
+        })
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+{
+  "id": "4698088",
+  "name": "SendMe",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "35553292",
+      "name": "doorroom",
+      "font_class": "doorroom",
+      "unicode": "e9d6",
+      "unicode_decimal": 59862
+    },
+    {
+      "icon_id": "372113",
+      "name": "cc-bell-o",
+      "font_class": "cc-bell-o",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "1029926",
+      "name": "plus",
+      "font_class": "plus",
+      "unicode": "e74b",
+      "unicode_decimal": 59211
+    },
+    {
+      "icon_id": "1241232",
+      "name": "上传",
+      "font_class": "upload",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "1241243",
+      "name": "下载",
+      "font_class": "download",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "4794745",
+      "name": "quit",
+      "font_class": "quit",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "11673429",
+      "name": "user",
+      "font_class": "user",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "11992466",
+      "name": "copy",
+      "font_class": "copy",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    },
+    {
+      "icon_id": "19995320",
+      "name": "chatroom",
+      "font_class": "chatroom",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "40070502",
+      "name": "send",
+      "font_class": "send",
+      "unicode": "eaa3",
+      "unicode_decimal": 60067
+    }
+  ]
+}
